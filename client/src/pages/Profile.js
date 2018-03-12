@@ -61,7 +61,7 @@ class Profile extends Component {
          <div className="container">
           <Card>
             <h1>My Account (View)</h1>
-            <h5><a href="#">Click Here</a> to edit account details. </h5>
+            <h5><a href="/">Click Here</a> to edit account details. </h5>
           <form>
              <div className="form-group">
               <label htmlFor="firstInput">First Name</label>
@@ -151,7 +151,7 @@ class Profile extends Component {
           </form>
           </Card>
           <Card className="iFrame">
-            <iframe src="https://subscriptions.zoho.com/subscribe/6ebbfd08b4cde1f9e3d79454c55797d0a5e12fff46ccfe5bad482bf477cf719e/1"></iframe>
+            <iframe src="https://subscriptions.zoho.com/subscribe/6ebbfd08b4cde1f9e3d79454c55797d0a5e12fff46ccfe5bad482bf477cf719e/1" title="title"></iframe>
           </Card>  
         </div>
 

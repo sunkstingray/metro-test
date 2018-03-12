@@ -7,7 +7,7 @@ import axios from "axios";
 
 function validate(username, password, passwordVal){
   
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(username))
+  if (/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/.test(username))
   {
     const emailTest = false;
     return {

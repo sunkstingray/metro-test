@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Metro Curbside Cleaning website revision",
   "main": "server.js",
+  "homepage" : "localhost:5000",
   "scripts": {
     "server": "node server.js",
     "client": "node scripts/start-client.js",
