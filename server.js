@@ -64,7 +64,8 @@ mydb.once("open", function() {
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+	//app.use(express.static("client/build"));
+	app.use('/static', express.static(path.join(__dirname, 'client/build')));
 }
 
 //****NOTE THAT THESE ROUTES CAN BE TESTED LOCALLY BY GOING TO LOCALHOST:3001****//
