@@ -149,16 +149,20 @@ componentDidMount() {
   }
 
   loadContent = () => {
+    console.log("mongoData------before");
+    console.log(this.state.mongoData);
     //do something to get the content for homepage from MongoDB and save it as the current state
     API.getAllContent()
       .then(result => {
         console.log("MONGO DATABSE")
         console.log(result.data);
-        if (result.data.length !== 0) {
+        if (result.data.length > 0) {
             this.setState({
                 mongoData: result.data
             })
         }
+        console.log("mongoData------after");
+        console.log(this.state.mongoData);
     }).catch(err => console.log(err))
   }
   
